@@ -25,6 +25,7 @@
 Анализ сезонности:
 
   model = Prophet(seasonality_mode='multiplicative')
+  
   model.fit(df)
 
 3. Рейтинг акций Google
@@ -33,7 +34,9 @@
 Обработка естественного языка:
 
   from textblob import TextBlob
+  
   blob = TextBlob(news_text)
+  
   sentiment = blob.sentiment.polarity
 
 4. Анализ фильмов
@@ -42,6 +45,7 @@
 Кластеризация фильмов:
 
   fig = px.scatter(df, x='budget', y='rating', color='genre')
+  
   fig.show()
 
 ## 🛠 Технологический стек
